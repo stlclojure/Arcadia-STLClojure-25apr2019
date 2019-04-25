@@ -12,3 +12,8 @@ Once it is installed, install a specific version of Unity itself.  We used `Unit
 - https://docs.unity3d.com/Manual/GettingStarted.html
 
 From here we were able to create a blank Unity 3D project.
+
+Then going back to the Arcadia Getting Started document, we were able to add in Arcadia to the project.
+
+- https://github.com/arcadia-unity/Arcadia/wiki/REPL
+- https://github.com/arcadia-unity/Arcadia/wiki/Using-Arcadia
