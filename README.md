@@ -17,3 +17,5 @@ Then going back to the Arcadia Getting Started document, we were able to add in 
 
 - https://github.com/arcadia-unity/Arcadia/wiki/REPL
 - https://github.com/arcadia-unity/Arcadia/wiki/Using-Arcadia
+
+Let's pick a tutorial to walk through from here: https://unity3d.com/learn/tutorials
