@@ -1,5 +1,6 @@
 (ns game.core
-  (:use arcadia.core))
+  (:use arcadia.core
+        arcadia.linear))
 
 (defn main-camera []
   (object-named "Main Camera"))
@@ -22,6 +23,9 @@
 (defn point-camera [p]
   (.. Camera/main transform (LookAt p)))
 
+(defn slide [obj]
+  (.. obj transform ()))
+
 (comment
   ;; Hit play AND THEN connect to the repl
   (require 'game.core)
@@ -30,6 +34,12 @@
   (hook+ (main-camera) :update :rotation #'game.core/rotate-other-way)
   (hook+ (main-camera) :update :rotation #'game.core/rotate-both-ways)
   (hook+ (main-camera) :update :rotation #'game.core/unrotate)
+  (create-primitive :sphere)
+  (create-primitive :sphere "Imma Ball")
+  (create-primitive :cube "Imma Box")
+  (hook+ (object-named "Imma Box")
+         :update :rotation #'game.core/rotate-both-ways
+         )
   )
 
 (log "Loaded game.core namespace.")
